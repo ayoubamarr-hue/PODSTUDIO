@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Creator Insights - POD Studio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#3c83f6",
+              "background-light": "#ffffff",
+              "background-dark": "#101722",
+            },
+            fontFamily: {
+              "display": ["Space Grotesk", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-[#111418] dark:text-gray-200">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 sm:px-8 md:px-20 lg:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1 gap-8">
+<!-- TopNavBar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[#f0f2f5] dark:border-gray-700 px-4 sm:px-10 py-3">
+<div class="flex items-center gap-4">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"></path></svg>
+</div>
+<h2 class="text-[#111418] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">POD Studio</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-[#111418] dark:text-gray-300 dark:hover:text-white text-sm font-medium leading-normal hover:text-primary" href="#">Dashboard</a>
+<a class="text-[#111418] dark:text-gray-300 dark:hover:text-white text-sm font-medium leading-normal hover:text-primary" href="#">Designs</a>
+<a class="text-[#111418] dark:text-gray-300 dark:hover:text-white text-sm font-medium leading-normal hover:text-primary" href="#">Products</a>
+<a class="text-primary dark:text-primary text-sm font-bold leading-normal" href="#">Creator Insights</a>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90">
+<span class="truncate">Create Design</span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="User avatar image" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAZjD3IClEVvkGkELYtFFlAsY75rvsJvBtjnvO52AjsIfI1lOnoG7Ose__P57XWzDGK-HUyWBPKTPdGtJkyJT-N4qqD8e13WeRImDTNeZkbvSqY8i2z1WNbgKrG31b9JwMRJnnfusXmACIdc7lQNZ7znlWCDL6i0BoF8aPig1Wy8thoK6F6jBgTt9v-mUz7QWUI1dCzvwQBkpR_g8_aTNlBq5iRJkonTelCLbrZVYNJnpedj-ICgGEKL-GNNBOwGvbjwqF_zCcJHYc");'></div>
+</div>
+<button class="md:hidden text-[#111418] dark:text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</header>
+<!-- PageHeading -->
+<div class="flex flex-wrap justify-between gap-3 px-4 py-4">
+<div class="flex min-w-72 flex-col gap-3">
+<p class="text-[#111418] dark:text-white text-4xl font-black leading-tight tracking-[-0.033em]">Creator Insights</p>
+<p class="text-[#60708a] dark:text-gray-400 text-base font-normal leading-normal">Your source for AI design tips, print-on-demand trends, and creative tutorials.</p>
+</div>
+</div>
+<!-- Featured Card -->
+<div class="p-4">
+<div class="bg-cover bg-center flex flex-col items-stretch justify-end rounded-xl pt-[132px] min-h-[300px]" data-alt="Abstract vibrant flowing lines of color, representing AI creativity" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAE18PksuIm6Hjx_WhbhMpW9C9X1xVu0PB0ol9tbPibrPL_FCb5-4bwryW-rxtiwyMTgOyqJUXMdSxCX9hiDX2JMLSdzDvmBamN6WruFighnXtOpdnnUoVzHOuIkUEicklLZUf40exp87RW89rcM7y6l4F-dcGZsfUQa3UCFRquqgOIYZ5erTaRrybBgtd_BFjZ8a780zgsdw7ei48QuWLXwo30zd_aEf87Qwj3-Ptrj900iOhads0TVjYuiXEJ4EA2oGkBWpT-ZW4");'>
+<div class="flex w-full flex-col md:flex-row items-start md:items-end justify-between gap-4 p-6">
+<div class="flex max-w-[440px] flex-1 flex-col gap-1">
+<p class="text-white tracking-light text-2xl font-bold leading-tight max-w-[440px]">Mastering AI: 10 Essential Design Tips for Stunning Visuals</p>
+<p class="text-gray-200 text-base font-medium leading-normal">Unlock the full potential of AI in your design workflow with these expert techniques.</p>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90">
+<span class="truncate">Read More</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Chips / Categories -->
+<div class="flex gap-3 p-3 flex-wrap pr-4 px-4">
+<div class="flex h-8 cursor-pointer shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary/20 dark:bg-primary/30 pl-4 pr-4">
+<p class="text-primary dark:text-white text-sm font-medium leading-normal">All</p>
+</div>
+<div class="flex h-8 cursor-pointer shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#f0f2f5] dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 pl-4 pr-4">
+<p class="text-[#111418] dark:text-gray-300 text-sm font-medium leading-normal">AI Art</p>
+</div>
+<div class="flex h-8 cursor-pointer shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#f0f2f5] dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 pl-4 pr-4">
+<p class="text-[#111418] dark:text-gray-300 text-sm font-medium leading-normal">POD Business</p>
+</div>
+<div class="flex h-8 cursor-pointer shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#f0f2f5] dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 pl-4 pr-4">
+<p class="text-[#111418] dark:text-gray-300 text-sm font-medium leading-normal">Tutorials</p>
+</div>
+</div>
+<!-- ImageGrid / Articles -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+<div class="flex flex-col gap-3 pb-3 group">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg overflow-hidden">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-300" data-alt="A person sketching design ideas on a digital tablet with an AI interface overlay" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAM5R1Nh03zTZMlx4CWEbNe0tqSuzx_YA5sgB8w-75Vc2E_gYgV1_w4oShlKLdCkBTsFb5jq9GKy0DzeKA3vBtGdhZ-Amnc8xaa-pByX80hQrxtUzSQduAevU25id1o3DN5cphFcQOC9XR8G7eaU_s5VQZncrbTLtyUioYvq8FkIVe2R9R6h-OKwd7puX4qYiwbVJZFOqeMcG0PT1LFmPOt5Bb2Z7EZnuDbAVP1S9p24NC8CV0ve2LqdJTRrH4RyupahIEFgzJRfKU");'></div>
+</div>
+<div>
+<p class="text-[#60708a] dark:text-gray-400 text-sm font-normal leading-normal">AI Art</p>
+<p class="text-[#111418] dark:text-white text-base font-bold leading-normal group-hover:text-primary dark:group-hover:text-primary">AI Design Tips</p>
+<p class="text-[#60708a] dark:text-gray-400 text-sm font-normal leading-normal">A practical guide to leveraging AI for your creative projects.</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 group">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg overflow-hidden">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-300" data-alt="An assortment of print-on-demand products like t-shirts, mugs, and posters" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB_vvqUcBDExqCadSqn3xiuUYlEOPYCMTW8YufCQ3EPzNs5fgISoHE4s2aqAxLqHSF7_0gCbG4d_4bc_daVUcO4mMH9KMmnl9y8-91LigQv3S0vSBOO3Lrq2so9OYRZyM-ytvOdsVvVk2oMNa5dPuQYKFh009tatwDOVrcpvB6xAoH_wzreTasxOJExGDUvQFsAzaSm_mBI5yuS0lTdfntQtH8ssj5Ctz-tZXFOrxzWNtY9gR7YuMkYBGkoy7mfsYy04wVIxGjJHpc");'></div>
+</div>
+<div>
+<p class="text-[#60708a] dark:text-gray-400 text-sm font-normal leading-normal">POD Business</p>
+<p class="text-[#111418] dark:text-white text-base font-bold leading-normal group-hover:text-primary dark:group-hover:text-primary">Best POD Niches 2025</p>
+<p class="text-[#60708a] dark:text-gray-400 text-sm font-normal leading-normal">Explore the most profitable and trending niches for the upcoming year.</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 group">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg overflow-hidden">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-300" data-alt="A close-up of a computer screen showing lines of code for an AI prompt" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA7_BW1vfcVL5dr6AzWBIoKvl9wz3LDWxBvwYRUKe2NNFbccolyKy-zeT4TE_vSGYCtl-JFPalUKWa4KstB-H3UqFNAWeyYKoS2Ws_mHHDNV5rQ3X-Ljb3vH3hRZpiN_s05mgvuS-vpZsQaxl3QAJ8_HdmeeztYIw2KSWPQeyeKDdcePUu67Je6xnIoPVkdNuKABLjey1tT_j-VC4LBekeH8oCdnRDdDmgdEFjth9Do1JhN_ysBDxbmMZsF5UYiF_TQkp37dSTKh9k");'></div>
+</div>
+<div>
+<p class="text-[#60708a] dark:text-gray-400 text-sm font-normal leading-normal">Tutorials</p>
+<p class="text-[#111418] dark:text-white text-base font-bold leading-normal group-hover:text-primary dark:group-hover:text-primary">How to Write Better Prompts</p>
+<p class="text-[#60708a] dark:text-gray-400 text-sm font-normal leading-normal">Craft effective prompts to get the exact results you want from AI tools.</p>
+</div>
+</div>
+</div>
+<!-- Newsletter Signup -->
+<div class="bg-gray-100 dark:bg-gray-800/50 rounded-xl p-8 my-8 mx-4">
+<div class="max-w-xl mx-auto text-center">
+<h3 class="text-2xl font-bold text-[#111418] dark:text-white tracking-tight">Stay Ahead of the Curve</h3>
+<p class="mt-2 text-base text-[#60708a] dark:text-gray-400">Get weekly AI design ideas and POD trends delivered to your inbox.</p>
+<form class="mt-6 flex flex-col sm:flex-row gap-3">
+<label class="sr-only" for="email-address">Email address</label>
+<input autocomplete="email" class="w-full px-4 py-2 text-base text-[#111418] dark:text-white bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg shadow-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary" id="email-address" name="email" placeholder="Enter your email" required="" type="email"/>
+<button class="flex-shrink-0 px-6 py-2 text-base font-bold text-white bg-primary rounded-lg shadow-sm hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary" type="submit">Subscribe</button>
+</form>
+</div>
+</div>
+<!-- Footer -->
+<footer class="text-center text-[#60708a] dark:text-gray-500 py-6 border-t border-[#f0f2f5] dark:border-gray-700 mt-8">
+<p>© 2024 POD Studio. All Rights Reserved.</p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+</body></html>

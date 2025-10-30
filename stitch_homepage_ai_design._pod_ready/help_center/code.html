@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>POD Studio - Help Center</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#3c83f6",
+                        "background-light": "#f5f7f8",
+                        "background-dark": "#101722",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 sm:px-10 md:px-20 lg:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<!-- TopNavBar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-black/10 dark:border-b-white/10 px-4 sm:px-10 py-3">
+<div class="flex items-center gap-4 text-slate-800 dark:text-slate-200">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-slate-800 dark:text-slate-200 text-lg font-bold leading-tight tracking-[-0.015em]">POD Studio</h2>
+</div>
+<div class="flex flex-1 justify-end gap-4 sm:gap-8">
+<div class="hidden sm:flex items-center gap-9">
+<a class="text-slate-800 dark:text-slate-200 text-sm font-medium leading-normal" href="#">Workspace</a>
+<a class="text-primary text-sm font-bold leading-normal" href="#">Help Center</a>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-black/5 dark:bg-white/10 text-slate-800 dark:text-slate-200 gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+<span class="material-symbols-outlined text-xl">notifications</span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="User avatar image" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDKHoEuwgAeS0jJdibdEcwlFU6TEu0VUZmQpqtTf6KOEtIhQ9DbkgPOKaevjpIulOjSQmgkfrn_DtFbWTo6WUZOakyGeEkSWE_I1ghKOIikAGNLo8aWqitPOvLtxTbD-dNIKNMBeJ3CEmiVM3UAa5V7LJdOEMoUv-I-9dhydhh9JgvUumiIeVnJyBgORnBOsDou_eTgbCnnzFxlMHT8roiQ9yd7wIRNao98xrIZxXZubPe4mmi6_fRvzsn5_1uLScSGow4afdoIk60");'></div>
+</div>
+</div>
+</header>
+<main class="flex flex-col gap-8 md:gap-12 mt-8 md:mt-12">
+<!-- PageHeading -->
+<div class="flex flex-wrap justify-between gap-3 p-4">
+<div class="flex w-full flex-col gap-3 text-center">
+<p class="text-slate-800 dark:text-slate-200 text-4xl sm:text-5xl font-black leading-tight tracking-[-0.033em]">How can we help?</p>
+<p class="text-slate-500 dark:text-slate-400 text-base font-normal leading-normal">Find answers to your questions and get in touch with our support team.</p>
+</div>
+</div>
+<!-- SearchBar -->
+<div class="px-4 py-3">
+<label class="flex flex-col min-w-40 h-14 w-full">
+<div class="flex w-full flex-1 items-stretch rounded-xl h-full shadow-sm">
+<div class="text-slate-500 dark:text-slate-400 flex bg-white dark:bg-slate-800 items-center justify-center pl-4 rounded-l-xl border-r-0">
+<span class="material-symbols-outlined text-2xl">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-slate-800 dark:text-slate-200 focus:outline-0 focus:ring-2 focus:ring-primary/50 border-none bg-white dark:bg-slate-800 h-full placeholder:text-slate-500 dark:placeholder:text-slate-400 px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal" placeholder="Search for answers..." value=""/>
+</div>
+</label>
+</div>
+<div>
+<!-- SectionHeader -->
+<h2 class="text-slate-800 dark:text-slate-200 text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Frequently Asked Questions</h2>
+<!-- Accordions -->
+<div class="flex flex-col p-4 border-t border-black/10 dark:border-white/10">
+<details class="flex flex-col border-b border-b-black/10 dark:border-b-white/10 py-3 group">
+<summary class="flex cursor-pointer items-center justify-between gap-6 py-2 list-none">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">auto_awesome</span>
+<p class="text-slate-800 dark:text-slate-200 text-base font-medium leading-normal">How AI Generation Works</p>
+</div>
+<div class="text-slate-500 dark:text-slate-400 transform transition-transform duration-300 group-open:rotate-180">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</summary>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal pb-2 pt-2 pl-10">This section explains the details about prompts, model versions, credits, and different image styles available with our AI generator.</p>
+</details>
+<details class="flex flex-col border-b border-b-black/10 dark:border-b-white/10 py-3 group">
+<summary class="flex cursor-pointer items-center justify-between gap-6 py-2 list-none">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">edit</span>
+<p class="text-slate-800 dark:text-slate-200 text-base font-medium leading-normal">How to Edit and Export</p>
+</div>
+<div class="text-slate-500 dark:text-slate-400 transform transition-transform duration-300 group-open:rotate-180">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</summary>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal pb-2 pt-2 pl-10">Discover how to use our powerful editor, understand resolution settings, choose the right file types, and save your creative projects.</p>
+</details>
+<details class="flex flex-col border-b border-b-black/10 dark:border-b-white/10 py-3 group">
+<summary class="flex cursor-pointer items-center justify-between gap-6 py-2 list-none">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">sell</span>
+<p class="text-slate-800 dark:text-slate-200 text-base font-medium leading-normal">Metadata &amp; Tags Explained</p>
+</div>
+<div class="text-slate-500 dark:text-slate-400 transform transition-transform duration-300 group-open:rotate-180">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</summary>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal pb-2 pt-2 pl-10">Learn about the importance of SEO, how to write effective titles and tags, and best practices for making your products discoverable.</p>
+</details>
+<details class="flex flex-col border-b border-b-black/10 dark:border-b-white/10 py-3 group">
+<summary class="flex cursor-pointer items-center justify-between gap-6 py-2 list-none">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">storefront</span>
+<p class="text-slate-800 dark:text-slate-200 text-base font-medium leading-normal">Supported POD Platforms</p>
+</div>
+<div class="text-slate-500 dark:text-slate-400 transform transition-transform duration-300 group-open:rotate-180">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</summary>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal pb-2 pt-2 pl-10">Find information on integration steps for popular print-on-demand services, a list of supported products, and troubleshooting for syncing issues.</p>
+</details>
+<details class="flex flex-col border-b border-b-black/10 dark:border-b-white/10 py-3 group">
+<summary class="flex cursor-pointer items-center justify-between gap-6 py-2 list-none">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">credit_card</span>
+<p class="text-slate-800 dark:text-slate-200 text-base font-medium leading-normal">Pricing &amp; Plans</p>
+</div>
+<div class="text-slate-500 dark:text-slate-400 transform transition-transform duration-300 group-open:rotate-180">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</summary>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal pb-2 pt-2 pl-10">Get answers to questions about our subscription tiers, accepted payment methods, and our cancellation policy.</p>
+</details>
+</div>
+</div>
+<!-- Contact Form -->
+<div class="p-4 mt-8 md:mt-12">
+<div class="bg-white dark:bg-slate-800/50 rounded-xl p-6 sm:p-8 border border-black/10 dark:border-white/10">
+<div class="text-center mb-6">
+<h3 class="text-slate-800 dark:text-slate-200 text-2xl font-bold leading-tight tracking-[-0.015em]">Still need help?</h3>
+<p class="text-slate-500 dark:text-slate-400 mt-2">Fill out the form below and our team will get back to you.</p>
+</div>
+<form class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+<div>
+<label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2" for="name">Name</label>
+<input class="form-input w-full rounded-lg border-slate-300 dark:border-slate-600 bg-transparent text-slate-800 dark:text-slate-200 focus:border-primary focus:ring-primary/50" id="name" name="name" placeholder="Jane Doe" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2" for="email">Email</label>
+<input class="form-input w-full rounded-lg border-slate-300 dark:border-slate-600 bg-transparent text-slate-800 dark:text-slate-200 focus:border-primary focus:ring-primary/50" id="email" name="email" placeholder="jane.doe@example.com" type="email"/>
+</div>
+<div class="sm:col-span-2">
+<label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2" for="subject">Subject</label>
+<input class="form-input w-full rounded-lg border-slate-300 dark:border-slate-600 bg-transparent text-slate-800 dark:text-slate-200 focus:border-primary focus:ring-primary/50" id="subject" name="subject" placeholder="How do I...?" type="text"/>
+</div>
+<div class="sm:col-span-2">
+<label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2" for="message">Your Message</label>
+<textarea class="form-textarea w-full rounded-lg border-slate-300 dark:border-slate-600 bg-transparent text-slate-800 dark:text-slate-200 focus:border-primary focus:ring-primary/50" id="message" name="message" placeholder="Please describe your issue..." rows="4"></textarea>
+</div>
+<div class="sm:col-span-2 flex justify-end">
+<button class="flex items-center justify-center px-6 py-3 rounded-lg bg-primary text-white text-sm font-bold hover:bg-primary/90 transition-colors" type="submit">Send Message</button>
+</div>
+</form>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="mt-12 py-8 px-4 border-t border-black/10 dark:border-white/10">
+<div class="flex flex-col sm:flex-row justify-between items-center gap-4">
+<p class="text-slate-500 dark:text-slate-400 text-sm">© 2024 POD Studio. All Rights Reserved.</p>
+<div class="flex gap-6 text-slate-500 dark:text-slate-400">
+<a class="hover:text-primary" href="#">Terms of Service</a>
+<a class="hover:text-primary" href="#">Privacy Policy</a>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</div>
+</div>
+</body></html>

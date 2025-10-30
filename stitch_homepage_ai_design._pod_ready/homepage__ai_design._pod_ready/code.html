@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>POD Studio - AI Design Workspace</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#3c83f6",
+              "secondary": "#9333ea",
+              "background-light": "#f5f7f8",
+              "background-dark": "#101722",
+            },
+            fontFamily: {
+              "display": ["Space Grotesk", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .glass-card {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .gradient-bg {
+        background-image: radial-gradient(at 27% 37%, hsla(215,98%,60%,0.1) 0px, transparent 50%), radial-gradient(at 97% 21%, hsla(260,90%,55%,0.1) 0px, transparent 50%), radial-gradient(at 52% 99%, hsla(240,90%,50%,0.1) 0px, transparent 50%);
+      }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-white/90 antialiased">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden gradient-bg">
+<div class="flex h-full grow flex-col">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-white/10 px-4 py-3 md:px-10 glass-card">
+<div class="flex items-center gap-4 text-white">
+<div class="size-6">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-lg font-bold tracking-[-0.015em]">POD Studio</h2>
+</div>
+<div class="hidden items-center gap-9 md:flex">
+<a class="text-sm font-medium leading-normal text-white/80 transition-colors hover:text-white" href="#">Features</a>
+<a class="text-sm font-medium leading-normal text-white/80 transition-colors hover:text-white" href="#">Demo</a>
+<a class="text-sm font-medium leading-normal text-white/80 transition-colors hover:text-white" href="#">Testimonials</a>
+<a class="text-sm font-medium leading-normal text-white/80 transition-colors hover:text-white" href="#">Pricing</a>
+</div>
+<div class="hidden gap-2 md:flex">
+<button class="flex h-10 min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-white/10 px-4 text-sm font-bold text-white transition-colors hover:bg-white/20">
+<span class="truncate">Log In</span>
+</button>
+<button class="flex h-10 min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary px-4 text-sm font-bold text-white shadow-[0_0_20px_theme(colors.primary/0.5)] transition-transform hover:scale-105">
+<span class="truncate">Try AI Studio</span>
+</button>
+</div>
+</header>
+<main class="flex-1">
+<!-- HeroSection -->
+<section class="flex flex-col items-center justify-center gap-6 px-4 py-20 text-center md:min-h-[600px] md:gap-8 md:py-32">
+<div class="flex flex-col gap-2">
+<h1 class="text-4xl font-black leading-tight tracking-tighter text-white md:text-6xl">
+                            Turn Words Into Designs.<br/>Turn Designs Into Income.
+                        </h1>
+<h2 class="mx-auto max-w-2xl text-base font-normal leading-normal text-white/70 md:text-lg">
+                            POD Studio is your complete AI workspace for creating, editing, and launching print-on-demand products.
+                        </h2>
+</div>
+<div class="flex flex-wrap justify-center gap-3">
+<button class="flex h-12 min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary px-5 text-base font-bold text-white shadow-[0_0_20px_theme(colors.primary/0.5)] transition-transform hover:scale-105">
+<span class="truncate">Try AI Studio</span>
+</button>
+<button class="flex h-12 min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-white/10 px-5 text-base font-bold text-white transition-colors hover:bg-white/20">
+<span class="truncate">See How It Works</span>
+</button>
+</div>
+</section>
+<!-- FeatureSection -->
+<section class="px-4 py-16 md:px-10 md:py-24">
+<div class="mx-auto max-w-5xl">
+<div class="flex flex-col gap-4 text-center">
+<h2 class="text-3xl font-bold tracking-tight text-white md:text-4xl">From Idea to Merch, Instantly</h2>
+<p class="mx-auto max-w-2xl text-base font-normal leading-normal text-white/70">Our AI-powered tools streamline every step of your creative process, saving you time and unlocking new possibilities.</p>
+</div>
+<div class="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+<div class="flex flex-col gap-3 rounded-xl p-6 glass-card transition-transform hover:-translate-y-1">
+<span class="material-symbols-outlined text-secondary" style="font-size: 32px;">auto_awesome</span>
+<div class="flex flex-col gap-1">
+<h3 class="text-lg font-bold text-white">AI Text-to-Design</h3>
+<p class="text-sm font-normal leading-normal text-white/60">Generate stunning, unique designs from simple text prompts.</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 rounded-xl p-6 glass-card transition-transform hover:-translate-y-1">
+<span class="material-symbols-outlined text-secondary" style="font-size: 32px;">magic_button</span>
+<div class="flex flex-col gap-1">
+<h3 class="text-lg font-bold text-white">Advanced Editor</h3>
+<p class="text-sm font-normal leading-normal text-white/60">Upscale, remove backgrounds, and adjust colors with one click.</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 rounded-xl p-6 glass-card transition-transform hover:-translate-y-1">
+<span class="material-symbols-outlined text-secondary" style="font-size: 32px;">sell</span>
+<div class="flex flex-col gap-1">
+<h3 class="text-lg font-bold text-white">Auto Metadata</h3>
+<p class="text-sm font-normal leading-normal text-white/60">Automatically create optimized titles, descriptions, and tags.</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 rounded-xl p-6 glass-card transition-transform hover:-translate-y-1">
+<span class="material-symbols-outlined text-secondary" style="font-size: 32px;">checkroom</span>
+<div class="flex flex-col gap-1">
+<h3 class="text-lg font-bold text-white">Realistic Mockups</h3>
+<p class="text-sm font-normal leading-normal text-white/60">Visualize your designs on high-quality product mockups.</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 rounded-xl p-6 glass-card transition-transform hover:-translate-y-1">
+<span class="material-symbols-outlined text-secondary" style="font-size: 32px;">upload</span>
+<div class="flex flex-col gap-1">
+<h3 class="text-lg font-bold text-white">POD Exporter</h3>
+<p class="text-sm font-normal leading-normal text-white/60">Get your designs ready for any print-on-demand platform.</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 rounded-xl p-6 glass-card transition-transform hover:-translate-y-1">
+<span class="material-symbols-outlined text-secondary" style="font-size: 32px;">insights</span>
+<div class="flex flex-col gap-1">
+<h3 class="text-lg font-bold text-white">Trend Analytics</h3>
+<p class="text-sm font-normal leading-normal text-white/60">Discover winning niches and design ideas before they go viral.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Demo Section -->
+<section class="px-4 py-16 text-center md:px-10 md:py-24">
+<div class="mx-auto max-w-4xl">
+<h4 class="text-sm font-bold uppercase tracking-widest text-primary">See It In Action</h4>
+<h2 class="mt-2 text-3xl font-bold tracking-tight text-white md:text-4xl">From Prompt to Product in Seconds</h2>
+<div class="mt-12 flex flex-col items-center justify-between gap-8 rounded-2xl border border-white/10 p-4 shadow-xl md:flex-row md:p-8 glass-card">
+<div class="flex flex-col items-center gap-4 text-center md:w-1/3 md:items-start md:text-left">
+<span class="material-symbols-outlined text-primary" style="font-size: 40px;">terminal</span>
+<h3 class="text-xl font-bold">1. Type a Prompt</h3>
+<p class="rounded-lg bg-black/20 p-4 font-mono text-sm text-white/80">"A synthwave astronaut surfing on a cosmic wave, retro vector art style"</p>
+</div>
+<span class="material-symbols-outlined hidden text-white/30 md:block">arrow_forward</span>
+<span class="material-symbols-outlined block text-white/30 md:hidden">arrow_downward</span>
+<div class="flex flex-col items-center gap-4 text-center md:w-1/3">
+<span class="material-symbols-outlined text-primary" style="font-size: 40px;">palette</span>
+<h3 class="text-xl font-bold">2. Generate Design</h3>
+<img alt="AI generated art of a synthwave astronaut surfing." class="rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVbvkE6sRfCVIzBJTpEv8t2LRGN6OFdUFB6FBfUf61hXeKKDMZOagCgA2titlNhSiiVewH85U5If3SVxDuQzMKD16FuWqQ4eO6Y0mTAnSipZQXU5yCCh2Ggrq8bk7e_q6_YTcd6hgMGChvsmYqVZh9u-wCOwo0qhPhvxtT8TaYgKnsJ505I7_vA3_bovEtylQlXTlnh2-gVgNRKHQznkt5tGxOWrzOvamOGe0-o_BUWPdpsJMzLfV81pPQjh3_n4f5g0EoJ3nMYsE"/>
+</div>
+<span class="material-symbols-outlined hidden text-white/30 md:block">arrow_forward</span>
+<span class="material-symbols-outlined block text-white/30 md:hidden">arrow_downward</span>
+<div class="flex flex-col items-center gap-4 text-center md:w-1/3">
+<span class="material-symbols-outlined text-primary" style="font-size: 40px;">shopping_cart</span>
+<h3 class="text-xl font-bold">3. Sell Product</h3>
+<img alt="A t-shirt mockup showing the astronaut design." class="rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5d4PwF_ytHT_vkj1nmZL0xryohJBgojUSY2rRJ2GDr8YGhfyNNDU5at0S5q_PDOr65c6Lq1gwpT3scSXCdkFlLYcS6S2s2BGClVP3LG3UOGDkbnuTLGImZpn6KgPh-QTJs7TJyKQbA9eMri5XNc9pbUcOA0PIZrJ5wvr1sVPXwIEoSkNKOZmbFlF7CnI8AUsgfSU0HTOQIHqAN8Sb3GILiyLM1F6cB2zoJj9VfaBwyhjYKFPVYSy60m_hS4GoSYCKBX4ItjJOES8"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="px-4 py-16 md:px-10 md:py-24">
+<div class="mx-auto max-w-5xl text-center">
+<h2 class="text-3xl font-bold tracking-tight text-white">Used by Creators Worldwide</h2>
+<p class="mx-auto mt-2 max-w-2xl text-base font-normal leading-normal text-white/70">Our users have sold millions of dollars worth of products designed with POD Studio.</p>
+<div class="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+<div class="rounded-xl p-6 text-left glass-card">
+<p class="text-white/80">"POD Studio is an absolute game-changer. The AI generator gives me endless ideas, and the editor is powerful yet simple. My sales have doubled!"</p>
+<div class="mt-4 flex items-center gap-3">
+<img alt="Avatar of Sarah L." class="h-10 w-10 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5u-kHFqwIQd02nzpIWdGG8LqdKjeMLxmLqbklN1SvULlIYgPAdu9ZzpCXm0lm5Ue_aiOTnE7NJp0l-m2WpOz1cqY0OKfSOYe7BCHRUIuewZTr4l5O-HSDe9Fx_TE_GcnY7vj5enQ6RNqL3sGfIdsBKQI7mk2FsD0FZ0GLohAEtcxuYbZyck0RkkeCESUKOWl9rRHLiSJH_ujKkests_kns8pGa_YMoTT4C9uuOQeUfQFLlqN9aoKVAkr3UfGTKUCURSmVW-3ZhSE"/>
+<div>
+<p class="font-bold text-white">Sarah L.</p>
+<p class="text-sm text-white/60">Etsy Seller</p>
+</div>
+</div>
+</div>
+<div class="rounded-xl p-6 text-left glass-card">
+<p class="text-white/80">"I'm not a designer, but with POD Studio, I feel like one. The automation for titles and tags saves me hours of work every week."</p>
+<div class="mt-4 flex items-center gap-3">
+<img alt="Avatar of Mike R." class="h-10 w-10 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD42xf7Z8DQOX9QCuMsS2iLXDcHMBjPKysv1i-U06CH1-Yn5n4Ln1W2HamIPgdAoeyRAK7944czaVYChIbUNG9qIsLuxY7TiJrIr7aYIuj2umjO3JOWGe3sw5-0cIHj1FKslvMjzH2j_BQuuMajvveYzrS1JMkqF9NlTTvVUKWiTu1PcKhXZpAR43ZkSwv3P4likE_dQLK6XAxH-EmSqJITViMQUiABS9bn1k51zB_hegL6dja_hsC9pYKFi_7cOHyReXOQwvbquEw"/>
+<div>
+<p class="font-bold text-white">Mike R.</p>
+<p class="text-sm text-white/60">Amazon Merch Creator</p>
+</div>
+</div>
+</div>
+<div class="rounded-xl p-6 text-left glass-card">
+<p class="text-white/80">"The quality of the mockups is insane. My products look so professional now, and my conversion rates have shot up. Highly recommended."</p>
+<div class="mt-4 flex items-center gap-3">
+<img alt="Avatar of Chloe W." class="h-10 w-10 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgsTtBr9tD9UhnqMMfROjHYkZ_PlzNWQRp_QEjuGMIdAlgil5Nt52FeCRkMcYvs6xYjSVUdVcdBNrHedyDgVp1-2B9tP2qira9WTdtdWjo5ih0UbwkDBQ9C5i9k3WOcROUGJbWi_oJPLH2Z_83QRabphNjk54wJokXuxzJEqyy33Ze6YZYFZSrWxbaKKHVzMSwaNHunZdt8wxJuBNWMqOmR_mfB55adKGoGnrh3HITaecVJxRc5_WVpwH11R-q8SiH_SeEF-EJ6Vs"/>
+<div>
+<p class="font-bold text-white">Chloe W.</p>
+<p class="text-sm text-white/60">Shopify Store Owner</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Pricing Section -->
+<section class="px-4 py-16 md:px-10 md:py-24">
+<div class="mx-auto max-w-4xl text-center">
+<h2 class="text-3xl font-bold tracking-tight text-white">Get Started for Free</h2>
+<p class="mx-auto mt-2 max-w-2xl text-base font-normal leading-normal text-white/70">Supercharge your creativity today. Upgrade anytime for unlimited access and advanced features.</p>
+<div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2">
+<div class="flex flex-col rounded-xl p-8 text-left glass-card">
+<h3 class="text-2xl font-bold text-white">Free</h3>
+<p class="mt-2 text-white/60">Perfect for getting started and exploring the platform.</p>
+<p class="mt-6 text-4xl font-bold text-white">$0 <span class="text-base font-normal text-white/60">/ month</span></p>
+<ul class="mt-6 space-y-3">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary">check_circle</span> 20 AI Generations / mo</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary">check_circle</span> Basic Editing Tools</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary">check_circle</span> Standard Mockups</li>
+</ul>
+<button class="mt-8 flex h-12 w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-white/10 text-base font-bold text-white transition-colors hover:bg-white/20">
+<span class="truncate">Start Creating</span>
+</button>
+</div>
+<div class="relative flex flex-col overflow-hidden rounded-xl border border-primary p-8 text-left shadow-[0_0_30px_theme(colors.primary/0.4)]">
+<div class="absolute right-0 top-0 rounded-bl-lg bg-primary px-3 py-1 text-xs font-bold uppercase">Most Popular</div>
+<h3 class="text-2xl font-bold text-white">Pro</h3>
+<p class="mt-2 text-white/60">For serious creators who want to scale their business.</p>
+<p class="mt-6 text-4xl font-bold text-white">$29 <span class="text-base font-normal text-white/60">/ month</span></p>
+<ul class="mt-6 space-y-3">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary">check_circle</span> Unlimited AI Generations</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary">check_circle</span> Advanced Editing Suite</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary">check_circle</span> Premium Mockups</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary">check_circle</span> Trend Analytics &amp; Insights</li>
+</ul>
+<button class="mt-8 flex h-12 w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary text-base font-bold text-white transition-transform hover:scale-105">
+<span class="truncate">Go Pro</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="border-t border-white/10 px-4 py-12 md:px-10">
+<div class="mx-auto max-w-6xl">
+<div class="grid grid-cols-2 gap-8 md:grid-cols-4">
+<div class="col-span-2 md:col-span-1">
+<div class="flex items-center gap-3">
+<div class="size-6 text-white">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-lg font-bold text-white">POD Studio</h2>
+</div>
+<p class="mt-2 text-sm text-white/60">The future of creation is here.</p>
+</div>
+<div>
+<h4 class="font-bold text-white">Product</h4>
+<ul class="mt-4 space-y-2 text-sm">
+<li><a class="text-white/60 hover:text-white" href="#">Features</a></li>
+<li><a class="text-white/60 hover:text-white" href="#">Pricing</a></li>
+<li><a class="text-white/60 hover:text-white" href="#">Demo</a></li>
+<li><a class="text-white/60 hover:text-white" href="#">Updates</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-white">Company</h4>
+<ul class="mt-4 space-y-2 text-sm">
+<li><a class="text-white/60 hover:text-white" href="#">About Us</a></li>
+<li><a class="text-white/60 hover:text-white" href="#">Blog</a></li>
+<li><a class="text-white/60 hover:text-white" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-white">Legal</h4>
+<ul class="mt-4 space-y-2 text-sm">
+<li><a class="text-white/60 hover:text-white" href="#">Terms of Service</a></li>
+<li><a class="text-white/60 hover:text-white" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+</div>
+<div class="mt-12 border-t border-white/10 pt-8 text-center text-sm text-white/50">
+<p>© 2024 POD Studio. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</body></html>

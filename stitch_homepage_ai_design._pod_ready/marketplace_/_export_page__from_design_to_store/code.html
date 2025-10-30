@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>POD Studio - Export Hub</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#3c83f6",
+                        "background-light": "#f5f7f8",
+                        "background-dark": "#101722",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.75rem",
+                        "xl": "1rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-[#111418] dark:text-gray-200">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- TopNavBar Section -->
+<header class="sticky top-0 z-50 w-full border-b border-solid border-gray-200/80 dark:border-gray-800/80 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="mx-auto flex max-w-7xl items-center justify-between whitespace-nowrap px-4 py-3 sm:px-6 lg:px-8">
+<div class="flex items-center gap-4">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em] text-[#111418] dark:text-white">POD Studio</h2>
+</div>
+<div class="hidden items-center gap-9 md:flex">
+<a class="text-sm font-medium leading-normal text-[#111418] dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">Workspace</a>
+<a class="text-sm font-medium leading-normal text-[#111418] dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">My Designs</a>
+<a class="text-sm font-bold leading-normal text-primary dark:text-primary" href="#">Marketplace</a>
+</div>
+<div class="flex flex-1 items-center justify-end gap-4">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+<span class="truncate">Get Started</span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="User profile avatar image" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCfYAyk2S9FtbydTTZ-slUPbzxna0oJPjSr8ty7I6D_jFUu2PJ7pm3KLFnjKRVHtgvCSgyeiyrvFLWo9811orarxz-IyMWIFkryrIsydqg0bbArjgqrO0B-GsWWvHbkr88I29DJf07vo7xmxwa-NlGW2h06c-5tR10PGLbxtLiX_MIgUvEpAaPBSdAXwlLJVTovuJE8j_h0C9nHTrG6jAK-MUe4AqAzJx8vBclCHs1CJ-xvV5bNJWZiSvy5e7Rr1t48wwA4B6625BU");'></div>
+</div>
+</div>
+</header>
+<main class="flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-7xl flex-1 px-4 sm:px-6 lg:px-8">
+<!-- HeroSection Section -->
+<div class="flex flex-col items-center gap-6 py-20 text-center sm:gap-8">
+<div class="flex flex-col gap-2">
+<h1 class="text-4xl font-black leading-tight tracking-[-0.033em] text-[#111418] dark:text-white sm:text-5xl md:text-6xl">
+                                Your Designs. Instantly Store-Ready.
+                            </h1>
+<h2 class="text-base font-normal leading-normal text-gray-600 dark:text-gray-400 max-w-2xl mx-auto sm:text-lg">
+                                Export your final mockups and metadata directly to TeePublic, Redbubble, Etsy, and more.
+                            </h2>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+<span class="truncate">Connect Your Store</span>
+</button>
+</div>
+<!-- SectionHeader (Partner Logos) Section -->
+<div class="py-10">
+<h4 class="text-sm font-bold leading-normal tracking-[0.015em] text-center text-gray-500 dark:text-gray-400">INTEGRATED WITH YOUR FAVORITE PLATFORMS</h4>
+<div class="mt-8 grid grid-cols-2 justify-items-center gap-x-6 gap-y-8 sm:grid-cols-3 md:grid-cols-6">
+<div class="flex justify-center" data-alt="TeePublic logo">
+<img alt="TeePublic Logo" class="h-8 object-contain dark:brightness-0 dark:invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDy8WcEVGC78QEdOQEhzg73q7B0Q0R7YqkzYkrH0t51qD1cd41maJZRAQ88LGGQjtK57D0ZFLrREhf1NAVJ-8O7OX9nOkOND3VSg46mOyF3ubf4Wf5Qtu4lg3Sm3xxdTq1pgEKyWRZMk96qbsmJypqstpURfyUu2fxOA1ZpfXPVPonYKP6rWJceyE5DWwoW62U_ushWjzuv0Nw_ECjlmdB8VrDgXoCuC7aYp_Q2PbncHW0yb8SPThPQ5zdm2YgiSMrpnFufMdC6Eg4"/>
+</div>
+<div class="flex justify-center" data-alt="Redbubble logo">
+<img alt="Redbubble Logo" class="h-8 object-contain dark:brightness-0 dark:invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEuKQRgt23It1RyX81BtLms5HmChKx4U5XHH0qXwMhanDByRiQn6-mugSE5fDvNV-KmB-pCMSYHeB28jRTlUajeT3BRL_hBjX9Vdl972i9LzyWZmd1NCvbHBpMMHSnRV1krIM1weItvBSXA96VXDGbTPmyOH3vX4TmgMjyadAIGuTLPlTYgOo5ivb2KghTrErFfypjqVYa7fi1JsNvGMur8090wvMRjT75PQbhbT3MtGNO-XcCKHn-E3m0goYko6iv6cwu53vW6lc"/>
+</div>
+<div class="flex justify-center" data-alt="Etsy logo">
+<img alt="Etsy Logo" class="h-8 object-contain dark:brightness-0 dark:invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMY5v7xruymgdoEAjgAntY25OzJkXQWMzne-wQzI06OUMq4ZX8hPHqk6DfqwUStXTHGGGpa9WJMluMLOzcLJ3eZ6UiPGodqBXbwb4ofiK5C0zGTTFboDN6VWR7ESS_mR9YkByowtASQbQhZr0kQYfw7bqnYkKucZiQg0_dU2xMsSAXw580jRgeZgZ93-yL5O-biAzMe9rhXY_5HRuQt3Ww_T8YLXCZ7LX3g-g6pP8J2Ya9ymdUD6cn_uREm-y6axEwzhFFSoohSnQ"/>
+</div>
+<div class="flex justify-center" data-alt="Printful logo">
+<img alt="Printful Logo" class="h-8 object-contain dark:brightness-0 dark:invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuCaMWeMEuBDXxFJYxPyRSkDU6m5_dO3SFk09oTfnfd3YLbnsw1nADRxM-lNH-mjlAhrzazXHjHDBhZDNDGe05rJWkVY-5ylfMF5YEf036ZgAaKrde42MSL_iyNJGqmNBGm65cIMwibwaGx0jkHXjKIfuF8c634NOwhqD67id8jD467uG0KuG5gF461fVxoYhdYFDwIM9T1WqqNi1LsFEVhdWiWYvzsIdYA4ehDSKxf0Dcq5wIgAlcf3jGPeGRGumCnbHXLPwNH5E"/>
+</div>
+<div class="flex justify-center" data-alt="Shopify logo">
+<img alt="Shopify Logo" class="h-8 object-contain dark:brightness-0 dark:invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDe6jFcpdoVgCUtZ9gKFjR-G-zIhcfIwk4nB3sIWQe00gJHFiOLhEHwtm9Nt8BMAdOFAoEKuhlNk7oeWJ6eqS60-kMcAz95CyencqHdozVZoZchtH29CuJuKO5BXJkzFCQkJ5oY0CjgelEnaDSF_QSOkU1nqgP9VqRuvcgQbi3NoZy5I8TxVMS7gsXJas4dEZ-b2Z4UTWdra1d8W_KJfabAKK4d2C8S_MLDXI_jGQsvwTxJeFXKMl3eLf4pzCxz_ve_ajOhlOigfc4"/>
+</div>
+<div class="flex justify-center" data-alt="Printify logo">
+<img alt="Printify Logo" class="h-8 object-contain dark:brightness-0 dark:invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4F2eTzZHAlUwiLzwAKQJZ6QDnhj2d19pQ5oAhnPhUKV6gHtJXwQiOfiTtD4WLuaCQkYGouU2xtUb-k2brq_Rs44Nj_XnX_3Ykj3y162ggQ0uv60DCFy2iiLEi47gMJJckTN78u42KoMMJ7yeCd4GWsNdEbUrDN4vBCrQkZZGTmDJUuIY2JE40QtSCpdy2nbwZB85XsKLC3Yomvsqj53c_LgFMK_DtvYSyVi_cWVzMYToiqrnmJRXI0mR8iMKyZzltzGRbs2IkzL0"/>
+</div>
+</div>
+</div>
+<!-- FeatureSection (How it works) Section -->
+<div class="flex flex-col gap-10 py-20 @container">
+<div class="flex flex-col gap-4 text-center">
+<h1 class="text-3xl font-bold leading-tight tracking-tight text-[#111418] dark:text-white sm:text-4xl">
+                                The 1-Click Export Workflow
+                            </h1>
+<p class="text-base font-normal leading-normal text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                                Our seamless export sends your designs and all associated data directly to your store, ready for sale in minutes.
+                            </p>
+</div>
+<div class="grid grid-cols-1 gap-4 md:grid-cols-3">
+<div class="flex flex-1 flex-col gap-3 rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/50 p-6 text-center items-center">
+<div class="text-primary rounded-full bg-primary/10 p-3">
+<span class="material-symbols-outlined text-3xl">image</span>
+</div>
+<div class="flex flex-col gap-1">
+<h2 class="text-lg font-bold leading-tight text-[#111418] dark:text-white">1. Select Design</h2>
+<p class="text-sm font-normal leading-normal text-gray-500 dark:text-gray-400">Pick any final design from your workspace.</p>
+</div>
+</div>
+<div class="flex flex-1 flex-col gap-3 rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/50 p-6 text-center items-center">
+<div class="text-primary rounded-full bg-primary/10 p-3">
+<span class="material-symbols-outlined text-3xl">storefront</span>
+</div>
+<div class="flex flex-col gap-1">
+<h2 class="text-lg font-bold leading-tight text-[#111418] dark:text-white">2. Choose Platform</h2>
+<p class="text-sm font-normal leading-normal text-gray-500 dark:text-gray-400">Select the print-on-demand store you want to publish to.</p>
+</div>
+</div>
+<div class="flex flex-1 flex-col gap-3 rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/50 p-6 text-center items-center">
+<div class="text-primary rounded-full bg-primary/10 p-3">
+<span class="material-symbols-outlined text-3xl">upload</span>
+</div>
+<div class="flex flex-col gap-1">
+<h2 class="text-lg font-bold leading-tight text-[#111418] dark:text-white">3. Export</h2>
+<p class="text-sm font-normal leading-normal text-gray-500 dark:text-gray-400">Click export and watch your design go live.</p>
+</div>
+</div>
+</div>
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl shadow-lg border border-gray-200 dark:border-gray-800" data-alt="A short looping video demonstrating the 1-click export workflow in the POD Studio application." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDllqJzxFEHJ9PCkOXDPqXaqXKYRTyBRqLEzBz8u4_F5B8-D6dtetXqegLlLPgiRvfti0FNw73XavgiBATF75gAvkTsBMscewUlHFFOB42HZmFbikGjbkRVkTClBnPcunaLOqZR2LsWIDrKVsUCe1OUmwwDXS_DIAUUoQNqxK8pKsgOjuLE57Xc28thKIfGGNjNPFW9SjspXFMT5CFzuNjwXTnGCGY8BK3y2ctF84QnVa535kv6G3XnJWZM8lkgi9Wygbvf9JOiVg8");'></div>
+</div>
+<!-- Footer CTA Section -->
+<div class="my-20">
+<div class="relative overflow-hidden rounded-xl bg-gray-900 px-6 py-20 sm:px-12 sm:py-24 md:px-20">
+<div class="absolute inset-0 bg-gradient-to-r from-primary to-blue-600 opacity-80"></div>
+<div class="absolute inset-0 mix-blend-multiply" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuArictjjxHFzCiMGGgL40SuOzGBM2NeC_HMjC21L9s_Njacr4AwUZV6AvkT0P-badajt2WAGy4UA4wDU3i4JCwhxv9AGz9NL1XBGMoMxyhKRkEcNEhuOKqE7GwHGZnYSpMUMkDfvCcOtOVsQhEPUms3HHTAHBpeMRjVYFViInoLvSkv1IF4dBK5VIISDnOnyaa11YkWkVU3RrnKBP0kL8ty40Y76En0jCvtdXfhVl-rI02KPNpPnIMelDb4x-xo1IAGZtjNVGS3ptY'); background-size: cover; background-position: center;"></div>
+<div class="relative mx-auto max-w-2xl text-center">
+<h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Ready to automate your workflow?</h2>
+<p class="mx-auto mt-4 max-w-xl text-lg leading-8 text-gray-200">Connect your print-on-demand stores today and start publishing your designs with a single click.</p>
+<div class="mt-10 flex items-center justify-center gap-x-6">
+<button class="rounded-lg bg-white px-5 py-3 text-base font-semibold text-primary shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-colors">Get started</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</body></html>

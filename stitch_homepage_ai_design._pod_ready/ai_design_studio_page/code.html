@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>POD Studio - AI Design Workspace</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#3c83f6",
+                        "background-light": "#f5f7f8",
+                        "background-dark": "#101722",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-white antialiased">
+<div class="relative flex h-screen w-full flex-col overflow-hidden">
+<!-- Top Navigation Bar -->
+<header class="flex h-[65px] flex-shrink-0 items-center justify-between whitespace-nowrap border-b border-solid border-white/10 bg-[#19212c] px-4">
+<div class="flex items-center gap-6">
+<div class="flex items-center gap-3 text-white">
+<span class="material-symbols-outlined text-primary text-2xl">category</span>
+<h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">POD Studio</h2>
+</div>
+<div class="hidden items-center gap-6 md:flex">
+<a class="text-white/80 hover:text-white text-sm font-medium leading-normal transition-colors" href="#">File</a>
+<a class="text-white/80 hover:text-white text-sm font-medium leading-normal transition-colors" href="#">Edit</a>
+<a class="text-white/80 hover:text-white text-sm font-medium leading-normal transition-colors" href="#">View</a>
+<a class="text-white/80 hover:text-white text-sm font-medium leading-normal transition-colors" href="#">Help</a>
+</div>
+</div>
+<div class="flex flex-1 justify-center px-4 lg:px-16">
+<label class="flex w-full max-w-2xl flex-col !h-11">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-white/60 flex border-none bg-background-dark/80 items-center justify-center pl-4 rounded-l-lg border-r-0">
+<span class="material-symbols-outlined">auto_awesome</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border-none bg-background-dark/80 h-full placeholder:text-white/60 px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal" placeholder="A majestic cyberpunk lion wearing sunglasses, synthwave style" value=""/>
+</div>
+</label>
+</div>
+<div class="flex flex-shrink-0 items-center justify-end gap-3">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-5 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-all duration-200 ring-2 ring-primary/30 hover:ring-primary/50">
+<span class="truncate">Generate</span>
+</button>
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-white/5 hover:bg-white/10 text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5 transition-colors">
+<span class="material-symbols-outlined text-xl">notifications</span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="User profile picture with a colorful abstract background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB4-VEf2PjIU6p_dKm46KyWjD35RX79QTs9Nj0zttfHLP_V4WwvF4EgjyNof1gN3L91R9kB-bTBDyn3_QQfKElPXWuHvJPa2s2CbmISYuWUnL0St-1wLB8Flbdc-DcxxrFwyTOeaerUdlkC_N-G0NtkjxjsfcPnOdCwztIqh7OZwttaDFlRAs_BtuMygXWLczIYE2_OitZXCj6D407m_USrIa3PXPN00eAo0ktICDB-n9-GcnFjF94gb_UficKSRhINY4wOEEOvmJ4");'></div>
+</div>
+</header>
+<!-- Main Content Area -->
+<div class="flex flex-1 overflow-hidden">
+<!-- Left Sidebar -->
+<aside class="w-64 flex-shrink-0 bg-[#19212c] p-4 flex flex-col justify-between">
+<div class="flex flex-col gap-4">
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-primary/20 cursor-pointer">
+<span class="material-symbols-outlined text-primary">add_circle</span>
+<p class="text-white text-sm font-medium leading-normal">New Design</p>
+</div>
+<div class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-white/5 cursor-pointer transition-colors">
+<span class="material-symbols-outlined text-white/80">grid_view</span>
+<p class="text-white/80 text-sm font-medium leading-normal">Templates</p>
+</div>
+<div class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-white/5 cursor-pointer transition-colors">
+<span class="material-symbols-outlined text-white/80">folder_open</span>
+<p class="text-white/80 text-sm font-medium leading-normal">My Designs</p>
+</div>
+<div class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-white/5 cursor-pointer transition-colors">
+<span class="material-symbols-outlined text-white/80">description</span>
+<p class="text-white/80 text-sm font-medium leading-normal">Metadata</p>
+</div>
+<div class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-white/5 cursor-pointer transition-colors">
+<span class="material-symbols-outlined text-white/80">checkroom</span>
+<p class="text-white/80 text-sm font-medium leading-normal">Mockups</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-white/5 cursor-pointer transition-colors">
+<span class="material-symbols-outlined text-white/80">settings</span>
+<p class="text-white/80 text-sm font-medium leading-normal">Settings</p>
+</div>
+<div class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-white/5 cursor-pointer transition-colors">
+<span class="material-symbols-outlined text-white/80">help</span>
+<p class="text-white/80 text-sm font-medium leading-normal">Support</p>
+</div>
+</div>
+</aside>
+<!-- Main Canvas & Bottom Panel -->
+<main class="flex flex-1 flex-col overflow-hidden">
+<div class="flex flex-1 items-center justify-center p-8 bg-grid-pattern" style="background-image: radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px); background-size: 20px 20px;">
+<!-- Canvas Content -->
+<div class="flex h-full w-full max-w-5xl items-center justify-center rounded-lg bg-black/20 shadow-2xl">
+<!-- Empty State Example -->
+<div class="flex flex-col items-center gap-6">
+<div class="bg-center bg-no-repeat aspect-square bg-contain w-full max-w-[200px]" data-alt="An icon showing a magic wand creating stars, symbolizing AI generation." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBT-Kkh83J6JCjFPHZ6-RxBCxJZalSzR4uWB6Tsv1MDmYZjULwUUDXA8wPXO8wb5GF-A2kt-KUI86BYF8V2kUq85k4yXcUDYBNFjmZRvkdNEvvAtHRu7gXGQyWHiPVmpzyc7s7Xdw7Yo2PrCirvleC8URUPwxhZdYJDwyxXgFNhXCRxf2zMtFNUHZ7zsggDVlw9sx6MMH7_k64_8OzAWT7In-V2t7QelclFqh_3a3-C4o3-EXyfIe6nRwBSQ747Yv87h8BfO81PBw0"); filter: invert(1) brightness(1.5) contrast(1.2); opacity: 0.8;'></div>
+<div class="flex max-w-[480px] flex-col items-center gap-2">
+<p class="text-white text-xl font-bold leading-tight tracking-[-0.015em] max-w-[480px] text-center">Your canvas is ready</p>
+<p class="text-white/70 text-sm font-normal leading-normal max-w-[480px] text-center">Describe your design idea in the prompt bar above to get started.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Metadata Panel -->
+<footer class="flex h-[160px] flex-shrink-0 flex-col border-t border-solid border-white/10 bg-[#19212c] p-4">
+<p class="text-sm font-medium text-white mb-3">AI-Generated Metadata</p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<div>
+<label class="block text-xs font-medium text-white/70 mb-1" for="title">Title</label>
+<input class="form-input w-full rounded-md border-white/20 bg-background-dark/80 text-white placeholder:text-white/50 text-sm focus:ring-primary focus:border-primary" id="title" type="text" value="Cyberpunk Lion"/>
+</div>
+<div>
+<label class="block text-xs font-medium text-white/70 mb-1" for="description">Description</label>
+<input class="form-input w-full rounded-md border-white/20 bg-background-dark/80 text-white placeholder:text-white/50 text-sm focus:ring-primary focus:border-primary" id="description" type="text" value="A majestic lion wearing sunglasses in a vibrant, futuristic synthwave style."/>
+</div>
+<div>
+<label class="block text-xs font-medium text-white/70 mb-1" for="tags">Tags (comma-separated)</label>
+<input class="form-input w-full rounded-md border-white/20 bg-background-dark/80 text-white placeholder:text-white/50 text-sm focus:ring-primary focus:border-primary" id="tags" type="text" value="cyberpunk, lion, animal, futuristic, synthwave, neon, sunglasses"/>
+</div>
+</div>
+</footer>
+</main>
+<!-- Right Sidebar -->
+<aside class="w-72 flex-shrink-0 border-l border-solid border-white/10 bg-[#19212c] p-4 flex flex-col">
+<div class="flex-1">
+<details class="flex flex-col border-b border-b-white/10 py-2 group" open="">
+<summary class="flex cursor-pointer items-center justify-between gap-6 py-2">
+<p class="text-white text-sm font-medium leading-normal">Image Tools</p>
+<span class="material-symbols-outlined text-white/80 group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="flex flex-col gap-2 pt-2">
+<div class="flex items-center gap-4 bg-background-dark/80 px-4 py-2.5 justify-between rounded-lg">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-white/80 text-xl">person_remove</span>
+<p class="text-white text-sm font-normal leading-normal flex-1 truncate">Remove Background</p>
+</div>
+<div class="shrink-0">
+<label class="relative flex h-[26px] w-[44px] cursor-pointer items-center rounded-full border-none bg-white/10 p-0.5 has-[:checked]:justify-end has-[:checked]:bg-primary">
+<div class="h-full w-[22px] rounded-full bg-white transition-transform"></div>
+<input class="invisible absolute" type="checkbox"/>
+</label>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-background-dark/80 px-4 py-2.5 justify-between rounded-lg">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-white/80 text-xl">hd</span>
+<p class="text-white text-sm font-normal leading-normal flex-1 truncate">Upscale Image</p>
+</div>
+<div class="shrink-0">
+<label class="relative flex h-[26px] w-[44px] cursor-pointer items-center rounded-full border-none bg-white/10 p-0.5 has-[:checked]:justify-end has-[:checked]:bg-primary">
+<div class="h-full w-[22px] rounded-full bg-white transition-transform"></div>
+<input checked="" class="invisible absolute" type="checkbox"/>
+</label>
+</div>
+</div>
+</div>
+</details>
+<details class="flex flex-col border-b border-b-white/10 py-2 group">
+<summary class="flex cursor-pointer items-center justify-between gap-6 py-2">
+<p class="text-white text-sm font-medium leading-normal">Color Adjustments</p>
+<span class="material-symbols-outlined text-white/80 group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="text-white/60 text-sm font-normal leading-normal pt-2 pb-2">Use sliders to adjust the color properties of your design.</p>
+</details>
+<details class="flex flex-col border-b border-b-white/10 py-2 group">
+<summary class="flex cursor-pointer items-center justify-between gap-6 py-2">
+<p class="text-white text-sm font-medium leading-normal">Export Options</p>
+<span class="material-symbols-outlined text-white/80 group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="text-white/60 text-sm font-normal leading-normal pt-2 pb-2">Select your desired format and quality for exporting.</p>
+</details>
+</div>
+<div class="flex flex-col gap-3">
+<button class="flex w-full min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-white/10 text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-white/20 transition-colors">
+<span class="truncate">Preview Mockup</span>
+</button>
+<button class="flex w-full min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+<span class="truncate">Download</span>
+</button>
+</div>
+</aside>
+</div>
+</div>
+</body></html>

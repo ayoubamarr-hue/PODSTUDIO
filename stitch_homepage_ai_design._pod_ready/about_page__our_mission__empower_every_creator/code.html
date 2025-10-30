@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us - POD Studio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#3c83f6",
+            "background-light": "#f5f7f8",
+            "background-dark": "#101722",
+          },
+          fontFamily: {
+            "display": ["Space Grotesk"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#111418] dark:text-gray-200">
+<div class="relative flex w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200/80 dark:border-gray-800/80 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm px-4 md:px-10 py-3">
+<div class="flex items-center gap-4 text-[#111418] dark:text-white">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">POD Studio</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9 text-sm font-medium leading-normal text-[#111418] dark:text-gray-300">
+<a class="hover:text-primary dark:hover:text-white" href="#">Features</a>
+<a class="hover:text-primary dark:hover:text-white" href="#">Pricing</a>
+<a class="hover:text-primary dark:hover:text-white" href="#">Community</a>
+<a class="hover:text-primary dark:hover:text-white" href="#">About Us</a>
+</div>
+<div class="flex gap-2">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+<span class="truncate">Join the Studio</span>
+</button>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-gray-200/80 dark:bg-gray-800/80 text-[#111418] dark:text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-gray-300/80 dark:hover:bg-gray-700/80 transition-colors">
+<span class="truncate">Log In</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col w-full max-w-4xl px-4">
+<!-- HeroSection -->
+<section class="text-center py-16 md:py-24">
+<div class="flex flex-col gap-6">
+<div class="flex flex-col gap-4 text-left">
+<h1 class="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-[#111418] dark:text-white">We built POD Studio because creativity should never stop at an idea.</h1>
+<p class="max-w-[700px] text-gray-600 dark:text-gray-400 md:text-xl/relaxed">The next evolution of print-on-demand creation is here. We give creators AI-powered tools to turn imagination into ready-to-sell products.</p>
+</div>
+<div class="flex flex-col gap-2 min-[400px]:flex-row justify-start">
+<button class="flex w-full sm:w-auto min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+<span class="truncate">Join the Studio</span>
+</button>
+<button class="flex w-full sm:w-auto min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-gray-200/80 dark:bg-gray-800/80 text-[#111418] dark:text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-gray-300/80 dark:hover:bg-gray-700/80 transition-colors">
+<span class="truncate">Learn More</span>
+</button>
+</div>
+</div>
+</section>
+<!-- FeatureSection (Mission & Vision) -->
+<section class="py-12 md:py-20">
+<div class="grid gap-8 md:grid-cols-2">
+<div class="flex flex-1 gap-4 rounded-xl border border-gray-200/80 dark:border-gray-800/80 bg-white dark:bg-background-dark p-6 flex-col shadow-sm">
+<div class="text-primary">
+<span class="material-symbols-outlined" style="font-size: 32px;">auto_awesome</span>
+</div>
+<div class="flex flex-col gap-1">
+<h2 class="text-xl font-bold leading-tight text-[#111418] dark:text-white">Our Mission</h2>
+<p class="text-gray-600 dark:text-gray-400 text-base font-normal leading-normal">To give creators AI-powered tools to turn imagination into ready-to-sell products.</p>
+</div>
+</div>
+<div class="flex flex-1 gap-4 rounded-xl border border-gray-200/80 dark:border-gray-800/80 bg-white dark:bg-background-dark p-6 flex-col shadow-sm">
+<div class="text-primary">
+<span class="material-symbols-outlined" style="font-size: 32px;">public</span>
+</div>
+<div class="flex flex-col gap-1">
+<h2 class="text-xl font-bold leading-tight text-[#111418] dark:text-white">Our Vision</h2>
+<p class="text-gray-600 dark:text-gray-400 text-base font-normal leading-normal">A world where anyone can design, sell, and scale effortlessly.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Timeline Section -->
+<section class="py-12 md:py-20">
+<div class="flex flex-col items-start gap-4">
+<h2 class="text-3xl font-bold tracking-tighter sm:text-4xl text-[#111418] dark:text-white">Our Story</h2>
+<p class="text-gray-600 dark:text-gray-400">From a simple idea to a thriving community of creators.</p>
+</div>
+<div class="mt-8 grid grid-cols-[40px_1fr] gap-x-4">
+<div class="flex flex-col items-center gap-2 pt-3">
+<div class="text-primary rounded-full bg-primary/20 p-2"><span class="material-symbols-outlined text-xl">emoji_objects</span></div>
+<div class="w-[2px] bg-gray-200 dark:bg-gray-800 h-full grow"></div>
+</div>
+<div class="flex flex-1 flex-col py-3">
+<p class="text-lg font-medium leading-normal text-[#111418] dark:text-white">Concept Born</p>
+<p class="text-gray-600 dark:text-gray-400 text-base font-normal leading-normal">2022</p>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-[2px] bg-gray-200 dark:bg-gray-800 h-2"></div>
+<div class="text-primary rounded-full bg-primary/20 p-2"><span class="material-symbols-outlined text-xl">rocket_launch</span></div>
+<div class="w-[2px] bg-gray-200 dark:bg-gray-800 h-full grow"></div>
+</div>
+<div class="flex flex-1 flex-col py-3">
+<p class="text-lg font-medium leading-normal text-[#111418] dark:text-white">Working Prototype</p>
+<p class="text-gray-600 dark:text-gray-400 text-base font-normal leading-normal">2023</p>
+</div>
+<div class="flex flex-col items-center gap-2 pb-3">
+<div class="w-[2px] bg-gray-200 dark:bg-gray-800 h-2"></div>
+<div class="text-primary rounded-full bg-primary/20 p-2"><span class="material-symbols-outlined text-xl">groups</span></div>
+</div>
+<div class="flex flex-1 flex-col py-3">
+<p class="text-lg font-medium leading-normal text-[#111418] dark:text-white">Creators Community Launch</p>
+<p class="text-gray-600 dark:text-gray-400 text-base font-normal leading-normal">2024</p>
+</div>
+</div>
+</section>
+<!-- Team Section -->
+<section class="py-12 md:py-20">
+<div class="flex flex-col items-start gap-4 mb-8">
+<h2 class="text-3xl font-bold tracking-tighter sm:text-4xl text-[#111418] dark:text-white">Meet the Team</h2>
+<p class="text-gray-600 dark:text-gray-400">The innovators and creators behind POD Studio.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="flex flex-col items-center text-center gap-4 rounded-xl border border-gray-200/80 dark:border-gray-800/80 bg-white dark:bg-background-dark p-6 shadow-sm">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-24" data-alt="Team member portrait" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCfCn7vo4f4ToAPEiYWSLCghrO3K2Km6YqJq8miAZ9sH6Z1VueqjtWwFR5TyD1cfIrmuqn_cQg4m15_mlCt9MWgBQuBSv6dhGViRA1XjT2ztofA-vQnS7AhIm1nb3coGX3i5GCszJZAzXY_uUNqpg9Eoucz1M1WGj8carIMAhACR7chIizA5Dadbr50ZlrjLgIfgDlGliSXhmjlRP96C3yOLIIVFgP8kYFuuneEYLdBdDV_EGsV1IlFFnLDvQSBq7cIg5_g7j_1jNU");'></div>
+<div class="flex flex-col gap-1">
+<h3 class="font-bold text-lg text-[#111418] dark:text-white">Alex Johnson</h3>
+<p class="text-sm text-primary">Founder &amp; CEO</p>
+</div>
+</div>
+<div class="flex flex-col items-center text-center gap-4 rounded-xl border border-gray-200/80 dark:border-gray-800/80 bg-white dark:bg-background-dark p-6 shadow-sm">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-24" data-alt="Team member portrait" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDpapNx3M5ACPbyW_5zqxS36gcZif1C1nDyok0NY_2fgSXFy3e6IWK7pRB7UsqU9GMDGadplZBNMzSVhG38zbMRamXK9BtDKdKaxpcmMSErZfZwtqpTXLYxdDMRQ-KpATiSm-25VRetsnQVAcHsZzPb771xBkhUGrR7VCbD9HUTp7VOMPdiUO1FY4Q8wZcHnGr2dj7US_jt6WW8GCb27fzJmH8mvybWQBUKa4OQ0kzML7kj5mRRUFzn8XMtsU0DvnqWOPKxN7kIYH8");'></div>
+<div class="flex flex-col gap-1">
+<h3 class="font-bold text-lg text-[#111418] dark:text-white">Jamie Lee</h3>
+<p class="text-sm text-primary">Head of Product</p>
+</div>
+</div>
+<div class="flex flex-col items-center text-center gap-4 rounded-xl border border-gray-200/80 dark:border-gray-800/80 bg-white dark:bg-background-dark p-6 shadow-sm">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-24" data-alt="Team member portrait" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBddrrhSr0EKf0iyBtbOyKHKxUpYejOJ44rIIEcujumFRzgaf5IGYuJi7i8l6Y7tzoDip_jsVbwYduS0j5687Qd3PelFtVBlB9BAxQH5mnxZXXMRBlLDYxuUMc1UVLD6wHjH2Dt53LyHeekITiDeE8DW1cDFWa-GpobPFCmxk2BouThjUGC1adBqCvhojUeumyEtQH2NbvkRFj8u2ydYqhZKArSmXyJUPrQ4JhYW_T8gLPtSxR3exzOVUd_mJ1br6icGCuJMtQUfMs");'></div>
+<div class="flex flex-col gap-1">
+<h3 class="font-bold text-lg text-[#111418] dark:text-white">Sam Chen</h3>
+<p class="text-sm text-primary">Lead Engineer</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-12 md:py-20">
+<div class="rounded-xl bg-primary text-white p-8 md:p-12 flex flex-col items-center text-center gap-6">
+<h2 class="text-3xl font-bold tracking-tighter sm:text-4xl">Ready to bring your ideas to life?</h2>
+<p class="max-w-xl text-primary/80">Join a community of forward-thinking creators and start building your print-on-demand empire today.</p>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-white text-primary text-base font-bold leading-normal tracking-[0.015em] hover:bg-gray-100 transition-colors">
+<span class="truncate">Start Creating</span>
+</button>
+</div>
+</section>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-gray-200/80 dark:border-gray-800/80 py-8 px-4 md:px-10">
+<div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-3">
+<div class="size-5 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"></path>
+</svg>
+</div>
+<p class="text-sm text-gray-600 dark:text-gray-400">© 2024 POD Studio. All rights reserved.</p>
+</div>
+<div class="flex gap-6 text-sm text-gray-600 dark:text-gray-400 font-medium">
+<a class="hover:text-primary dark:hover:text-white" href="#">Terms of Service</a>
+<a class="hover:text-primary dark:hover:text-white" href="#">Privacy Policy</a>
+<a class="hover:text-primary dark:hover:text-white" href="#">Contact</a>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</body></html>
